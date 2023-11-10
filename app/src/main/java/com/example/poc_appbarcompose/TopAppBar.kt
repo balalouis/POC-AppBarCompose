@@ -19,7 +19,7 @@ import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun smallTopAppBar(books: List<BookModel> = DEFAULT_BOOKS) {
+fun MySmallTopAppBar(books: List<BookModel> = DEFAULT_BOOKS) {
     val listState = rememberLazyListState()
     Scaffold(topBar = {
         TopAppBar(colors = TopAppBarDefaults.smallTopAppBarColors(
