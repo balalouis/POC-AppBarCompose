@@ -22,7 +22,7 @@ import com.example.poc_appbarcompose.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun IntroBegin(navController: NavController) {
+fun IntroDetail(navController: NavController) {
     Scaffold(topBar = { TopAppBar(title = { /*TODO*/ }) }) {
         Column(
             modifier = Modifier
