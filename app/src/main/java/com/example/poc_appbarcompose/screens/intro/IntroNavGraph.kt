@@ -7,7 +7,6 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navigation
 import com.example.poc_appbarcompose.NavRoutes
 
-@Composable
 fun NavGraphBuilder.introNavGraph(navController: NavController) {
     navigation(
         startDestination = IntroNavOption.IntroBeginScreen.name,
