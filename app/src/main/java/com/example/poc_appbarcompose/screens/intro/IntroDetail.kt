@@ -39,7 +39,7 @@ fun IntroDetail(navController: NavController) {
                 modifier = Modifier.fillMaxWidth()
             )
             Spacer(modifier = Modifier.weight(1f))
-            Button(onClick = { /*TODO*/ }) {
+            Button(onClick = { navController.navigate(IntroNavOption.IntroEndScreen.name) }) {
                 Text(text = stringResource(id = R.string.next))
             }
         }
