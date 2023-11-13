@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">POC-AppBarCompose</string>
+    <string name="intro_begin">Welcome Screen</string>
+    <string name="intro_detail">Hello world</string>
+    <string name="intro_end">Story ends</string>
+    <string name="next">Next</string>
+    <string name="ic_arrow_back">Back button</string>
 </resources>
