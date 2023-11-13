@@ -1,4 +1,4 @@
-package com.example.poc_appbarcompose
+package com.example.poc_appbarcompose.appdrawer
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
@@ -18,10 +18,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.poc_appbarcompose.appdrawer.AppDrawerItem
 import com.tomasrepcik.appdrawer.app.ui.components.appdrawer.AppDrawerItemInfo
 import kotlinx.coroutines.launch
-
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

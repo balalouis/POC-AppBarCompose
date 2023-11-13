@@ -1,7 +1,5 @@
 package com.example.poc_appbarcompose.screens.main
 
-import androidx.annotation.DrawableRes
-import androidx.annotation.StringRes
 import androidx.compose.material3.DrawerState
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -20,6 +18,7 @@ import com.example.poc_appbarcompose.R
 import com.example.poc_appbarcompose.screens.intro.IntroViewModel
 import com.example.poc_appbarcompose.screens.intro.introNavGraph
 import com.example.poc_appbarcompose.ui.theme.POCAppBarComposeTheme
+import com.tomasrepcik.appdrawer.app.ui.components.appdrawer.AppDrawerItemInfo
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -91,11 +90,3 @@ object DrawerParams {
         )
     )
 }
-
-
-data class AppDrawerItemInfo<T>(
-    val drawerOption: T,
-    @StringRes val title: Int,
-    @DrawableRes val drawableId: Int,
-    @StringRes val descriptionId: Int
-)
