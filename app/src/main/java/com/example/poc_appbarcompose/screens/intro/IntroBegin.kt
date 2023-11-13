@@ -8,7 +8,8 @@ import com.example.poc_appbarcompose.R
 @Composable
 fun IntroBegin(navController: NavController) = IntroCompose(
     navController = navController,
-    text = stringResource(id = R.string.intro_begin)
+    text = stringResource(id = R.string.intro_begin),
+    showBackButton = false
 ) {
     navController.navigate(IntroNavOption.IntroDetailScreen.name)
 }

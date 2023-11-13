@@ -10,19 +10,19 @@ import androidx.navigation.navigation
 import com.example.poc_appbarcompose.NavRoutes
 
 @OptIn(ExperimentalMaterial3Api::class)
-fun NavGraphBuilder.mainNavGraph(drawerState: DrawerState, navController: NavController) {
+fun NavGraphBuilder.mainNavGraph(drawerState: DrawerState) {
     navigation(
         startDestination = MainNavOption.HomeScreen.name,
         route = NavRoutes.MainRoute.name
     ) {
         composable(MainNavOption.HomeScreen.name) {
-            AboutScreen(navController = navController)
+            AboutScreen(drawerState)
         }
         composable(MainNavOption.SettingsScreen.name) {
-            SettingsScreen(navController = navController)
+            SettingsScreen(drawerState)
         }
         composable(MainNavOption.AboutScreen.name) {
-            HomeScreen(navController = navController)
+            HomeScreen(drawerState)
         }
     }
 }

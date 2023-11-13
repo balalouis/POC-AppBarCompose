@@ -61,7 +61,7 @@ fun MainCompose(
                     startDestination = if (isOnboarded.value) NavRoutes.MainRoute.name else NavRoutes.IntroRoute.name
                 ) {
                     introNavGraph(navController)
-                    mainNavGraph(drawerState, navController)
+                    mainNavGraph(drawerState)
                 }
             }
         }
